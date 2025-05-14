@@ -1,0 +1,40 @@
+<mvc:View
+    controllerName="hcr.tvseries.tvseries.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <Table
+            id="tvSeriesTable"
+            inset="false"
+        >
+            <columns>
+                <Column>
+                    <Text text="Series Name" />
+                </Column>
+                <Column>
+                    <Text text="Author" />
+                </Column>
+                <Column>
+                    <Text text="Number of Episodes" />
+                </Column>
+                <Column>
+                    <Text text="Years of Emission" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{seriesName}" />
+                        <Text text="{author}" />
+                        <Text text="{numEpisodes}" />
+                        <Text text="{yearsOfEmission}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>
